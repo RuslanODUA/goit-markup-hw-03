@@ -35,13 +35,16 @@ h4 {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 3px solid springgreen;
+  /* outline: 3px solid springgreen; */
 }
 .section {
   padding-bottom: 94px;
 }
 .section.end {
   padding-bottom: 0;
+}
+.container.tim {
+  background-color: #f5f4fa;
 }
 
 /* Общие параметры для логотипа */
@@ -183,11 +186,11 @@ h4 {
 }
 .footer-logo {
   margin-bottom: 20px;
-  outline: 3px solid springgreen;
+  /* outline: 3px solid springgreen; */
 }
 .footer-item {
   margin-bottom: 9px;
-  outline: 3px solid springgreen;
+  /* outline: 3px solid springgreen; */
 }
 
 /********* П О Р Т Ф О Л И О ************/
@@ -209,12 +212,18 @@ h4 {
 .portfolio-title {
   color: var(--title-text-color);
   font-size: 18px;
+  margin-bottom: 4px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
+  margin-bottom: 20px;
+}
+.portfolio-img {
+  margin-bottom: 20px;
+  /* outline: 3px solid springgreen; */
 }
 
 /* Убираю маркер у всех списков  */
