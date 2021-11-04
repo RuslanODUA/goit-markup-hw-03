@@ -22,22 +22,31 @@ h3,
 h4 {
   margin: 0;
 }
-
-.container,
-.footer-container {
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+.container {
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 3px solid springgreen; */
 }
+.footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
-.section.end {
+/* .section.end {
   padding-bottom: 94px;
   background-color: #f5f4fa;
-}
+} */
 /* .container.tim {
   background-color: #f5f4fa;
 } */
@@ -76,6 +85,12 @@ h4 {
   color: var(--accent-link-color);
 }
 /* Flex box Flex box Flex box */
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.work-container {
+}
 .nav-list {
   display: flex;
 }
@@ -100,22 +115,26 @@ h4 {
 .feature-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-section {
+  background-color: #f5f4fa;
+}
 .tim-list {
   display: flex;
 }
-.tim-item:not(:last-child) {
+/* .tim-item:not(:last-child) {
   margin-right: 30px;
-}
-.teamlead-list {
+} */
+.team-list {
   text-align: center;
   display: flex;
 }
-.teamlead-item:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 .filter {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
   margin-right: 8px;
@@ -150,19 +169,18 @@ h4 {
   color: var(--accent-link-color);
 }
 /* Шапка */
-.bg-color {
-  /* align-items: center; */
-  background: var(--main-bg-golor);
-}
+
 .hero {
+  padding: 200px 0;
   text-align: center;
+  background: var(--main-bg-golor);
 }
 .business-title {
   color: var(--accent-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  padding-top: 200px;
+  /* padding-top: 200px; */
   text-transform: uppercase;
   margin-bottom: 30px;
   /* outline: 3px solid springgreen; */
@@ -177,21 +195,23 @@ h4 {
   padding: 10px 32px;
   background-color: #2196f3;
   color: var(--accent-text-color);
-  margin-bottom: 200px;
+  /* margin-bottom: 200px; */
   cursor: pointer; /* Задан курсор при наведении*/
   /* outline: 3px solid springgreen; */
 }
 /* Наши Особенности */
-.hide-text {
-  /* Скрываю текст 
-  В учебном материале данную 
-  информацию еще не проходили, 
-  поэтому взят данный кусок из 
-  интернета. В бедующем будет 
-  заменен на корректный.*/
 
-  text-indent: 100%;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
   white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 /**********************************/
@@ -204,40 +224,59 @@ h4 {
   margin-bottom: 10px;
 }
 .feature-text,
-.teamlead-text,
+.team-text,
 .portfolio-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primary-text-color);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 /* Чем мы занимаемся */
+.work-section {
+  padding-top: 0;
+}
 .work-title,
-.tim-title {
+.team-title {
   font-size: 36px;
   line-height: 1.16;
   color: var(--title-text-color);
   text-align: center;
-  padding-top: 94px;
+  /* padding-top: 94px; */
   margin-bottom: 50px;
 }
-
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  color: var(--title-text-color);
+  text-align: center;
+  margin-bottom: 50px;
+}
 .position {
   font-size: 16px;
   line-height: 1.18;
 }
-.teamlead-foto {
-  margin-bottom: 30px;
-  border-radius: 0 0 4px 4px;
+.img-box {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-.teamlead-title {
+.team-foto {
+  /* margin-bottom: 30px;
+  border-radius: 0 0 4px 4px; */
+}
+.team-bloc-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 10px;
 }
-.teamlead-item {
+.team-item {
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -257,6 +296,7 @@ h4 {
   font-weight: 400;
 }
 .footer {
+  padding: 60px 0;
   background-color: #2f303a;
 }
 .footer-logo {
@@ -264,15 +304,18 @@ h4 {
   margin-bottom: 20px;
 }
 
-.footer-item {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
+}
+ {
+  /* margin-bottom: 9px; */
   /* outline: 3px solid springgreen; */
 }
 .footer-container {
-  padding-top: 60px;
+  /* padding-top: 60px; */
 }
 .footer-address {
-  padding-bottom: 60px;
+  /* padding-bottom: 60px; */
 }
 /********* П О Р Т Ф О Л И О ************/
 .filter-button {
@@ -283,7 +326,8 @@ h4 {
   line-height: 1.62;
   border: 0;
   border-radius: 4px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
+  padding: 6px 22px;
   color: var(--title-text-color);
   background-color: #f5f4fa;
   cursor: pointer; /* Задан курсор при наведении*/
@@ -293,22 +337,25 @@ h4 {
   color: var(--accent-text-color);
   background-color: #2196f3;
 }
+.portfolio-bloc-text {
+  padding: 20px 24px;
+}
 .portfolio-title {
   color: var(--title-text-color);
   font-size: 18px;
-  padding-left: 24px;
-  margin-bottom: 4px;
+  /* padding-left: 24px;
+  margin-bottom: 4px; */
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-text {
   font-size: 16px;
   line-height: 1.87;
-  padding-left: 24px;
-  margin-bottom: 20px;
+  /* padding-left: 24px;
+  margin-bottom: 20px; */
 }
 .portfolio-img {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 /* Убираю маркер у всех списков  */
