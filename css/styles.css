@@ -147,7 +147,7 @@ h4 {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+  /* border: 1px solid #eeeeee; */
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -338,6 +338,7 @@ h4 {
   background-color: #2196f3;
 }
 .portfolio-bloc-text {
+  border: 1px solid #eeeeee;
   padding: 20px 24px;
 }
 .portfolio-title {
