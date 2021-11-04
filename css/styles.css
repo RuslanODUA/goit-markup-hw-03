@@ -89,8 +89,6 @@ h4 {
   display: flex;
   align-items: center;
 }
-.work-container {
-}
 .nav-list {
   display: flex;
 }
@@ -261,10 +259,7 @@ h4 {
   max-width: 100%;
   height: auto;
 }
-.team-foto {
-  /* margin-bottom: 30px;
-  border-radius: 0 0 4px 4px; */
-}
+
 .team-bloc-text {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -306,17 +301,11 @@ h4 {
 
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
- {
+
   /* margin-bottom: 9px; */
   /* outline: 3px solid springgreen; */
 }
-.footer-container {
-  /* padding-top: 60px; */
-}
-.footer-address {
-  /* padding-bottom: 60px; */
-}
+
 /********* П О Р Т Ф О Л И О ************/
 .filter-button {
   font-family: Roboto;
@@ -354,9 +343,6 @@ h4 {
   line-height: 1.87;
   /* padding-left: 24px;
   margin-bottom: 20px; */
-}
-.portfolio-img {
-  /* margin-bottom: 20px; */
 }
 
 /* Убираю маркер у всех списков  */
